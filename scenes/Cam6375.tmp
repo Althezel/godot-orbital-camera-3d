@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://kjk6pjq2m58g"]
+
+[ext_resource type="Script" path="res://FixedPointCamera.gd" id="1_s0rjv"]
+
+[node name="Main" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+current = true
+script = ExtResource("1_s0rjv")
